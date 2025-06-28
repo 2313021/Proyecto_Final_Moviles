@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Tipo de comida -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de comida"
+            />
+        <Spinner
+            android:id="@+id/spTipoComida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Glicemia -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nivel de glicemia (mg/dL)"/>
+        <EditText
+            android:id="@+id/etGlicemia"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Alimento seleccionado -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alimento"/>
+        <Spinner
+            android:id="@+id/spAlimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Cantidad en porciones -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de porciones"/>
+        <EditText
+            android:id="@+id/etCantidad"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Botón para calcular y guardar -->
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular y Guardar"
+            android:textColor="@color/buttonText"
+            android:backgroundTint="#00A3FF"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/tvResultado"
+            android:text="Insulina Total: "
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
